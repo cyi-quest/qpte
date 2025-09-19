@@ -1,0 +1,171 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="QPTE_sounds_data" version="1.3.0" audacityversion="2.4.2" sel0="0.0000000000" sel1="6.4580416667" vpos="272" h="0.0000000000" zoom="226.4069626257" rate="48000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags/>
+	<wavetrack name="Mix" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="1" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="309986">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f51a.au" len="262144" min="0.0" max="0.813256" rms="0.31008"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="eff1fd29.au" len="47842" min="0.0" max="0.500453" rms="0.290295"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Mix" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="1" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="309986">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f51a.au" len="262144" min="0.0" max="0.813256" rms="0.31008"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="eff1fd29.au" len="47842" min="0.0" max="0.500453" rms="0.290295"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Mix" isSelected="0" height="158" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.05507142" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="45291">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fc49.au" len="45291" min="-0.693597" max="0.693976" rms="0.100603"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Mix" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.05507142" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="45291">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f6e0.au" len="45291" min="-1.0" max="1.0" rms="0.719298"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Mix" isSelected="1" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="309986">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f892.au" len="262144" min="-1.0" max="1.0" rms="0.705172"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="eff1fbf4.au" len="47842" min="-1.0" max="1.0" rms="0.706757"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Mix" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="1" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="309986">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fa58.au" len="262144" min="-0.647821" max="0.631331" rms="0.032871"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="eff1f779.au" len="47842" min="-0.001922" max="0.001815" rms="0.000355"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Mix" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="1" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="309986">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fa58.au" len="262144" min="-0.647821" max="0.631331" rms="0.032871"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="eff1f779.au" len="47842" min="-0.001922" max="0.001815" rms="0.000355"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="CycloBell_A_01_LFO_SHIFTED_Quantum_qpte_0" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="22050" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="3699">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f417.au" len="3699" min="0.234039" max="0.848511" rms="0.494696"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="CycloBell_A_01_LFO_SHIFTED_Quantum_qpte_1" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="22050" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="3699">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f309.au" len="3699" min="0.11731" max="0.527527" rms="0.351734"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="CycloBell_A_01_LFO_SHIFTED_Quantum_qpte_2" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="22050" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="3699">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f637.au" len="3699" min="0.0" max="0.341125" rms="0.14037"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="CycloBell_A_01_LFO_SHIFTED_Quantum_qpte_3" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="22050" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="3699">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fe2c.au" len="3699" min="0.0" max="0.271851" rms="0.105529"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="CycloBell_A_01_LFO_SHIFTED_Quantum_qpte_size8_shots100000_schemesqpam_qpte_term0" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="22050" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="142400">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f250.au" len="142400" min="0.238586" max="0.81366" rms="0.421533"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="CycloBell_A_01_LFO_SHIFTED_Quantum_qpte_size8_shots100000_schemesqpam_qpte_term1" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="22050" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="142400">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f59b.au" len="142400" min="0.143494" max="0.516266" rms="0.410832"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="CycloBell_A_01_LFO_SHIFTED_Quantum_qpte_size8_shots100000_schemesqpam_qpte_term2" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="22050" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="142400">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fe5a.au" len="142400" min="0.0" max="0.337921" rms="0.120765"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="CycloBell_A_01_LFO_SHIFTED_Quantum_qpte_size8_shots100000_schemesqpam_qpte_term3" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="22050" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="142400">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1ff78.au" len="142400" min="0.0" max="0.261292" rms="0.118209"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Mix" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0"/>
+</project>

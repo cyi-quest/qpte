@@ -1,0 +1,6 @@
+Processing time: 436.52 seconds | chunk size: 8 | shots: 100000
+Processing time: 36.68 seconds | chunk size: 8 | shots: 100000
+Processing time: 220.56 seconds | chunk size: 8 | shots: 100000
+Processing time: 220.55 seconds | chunk size: 8 | shots: 100000
+Processing time: 149.64 seconds | chunk size: 8 | shots: 1000000
+Processing time: 2967.05 seconds | chunk size: 64 | shots: 10000000
