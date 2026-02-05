@@ -1,14 +1,19 @@
 [![DOI](https://zenodo.org/badge/963191805.svg)](https://doi.org/10.5281/zenodo.17158543)
 
-# Quantum Processing through Encoding
-Repository containing the source code for the manuscript submitted to [ISQCMC'25](https://2025.isqcmc.org)
+# Project Overview
+This repository contains the source code used to produce the data 
 
-## Contents
-- **[POC](./POC)**
-  > A jupyter notebook, containg proof of concept using Pennylane, for the methods described in the manuscript
-- **[quantum-audio-qpte](https://github.com/Itaborala/quantum-audio-qpte/tree/9c7526b4377085b025715b6c18cab4a8794a8e54)**
-  > A fork of the `quantumaudio` package, providng a protocol for the implementation of the proposed scheme
-- **[experiments](./experiments)**
-  > Experiments used in the submitted work
-- **[slurm](./slurm)**
-  > Scripts used for the parallelization of the simulation on a High Performance Computer
+## Environment Setup
+This project uses Python 3.10.
+- Create a virtual environment:
+```bash
+python3 -m venv .venv
+```
+- Activate the virtual environment create
+```bash
+source .venv/bin/activate
+```
+- Install package dependencies
+```bash
+python3 -m pip install -r requirements.txt
+```

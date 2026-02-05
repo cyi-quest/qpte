@@ -45,7 +45,7 @@ def main():
     # Load audio
     sound_bank = "qpte_sounds"
     file_name1 = "LFO_2.5hz_mono.wav"
-    file_name2 = "Destraido_CycloBell_banco_A_01_mono.wav"
+    file_name2 = "bell.wav"
     out_name = "CycloBell_A_01_LFO_SHIFTED_Quantum"
 
     path1 = os.path.join(sound_bank, file_name1)
