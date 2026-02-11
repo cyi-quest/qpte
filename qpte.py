@@ -1,8 +1,20 @@
-from concurrent.futures.thread import ThreadPoolExecutor
 from os import getenv
 from contextlib import ExitStack
 from concurrent.futures import ProcessPoolExecutor
 from soundfile import SoundFile
+
+class Block:
+    def __init__(self, index, data, qubit_requirements):
+        self.index = index
+        self.data = data
+        self.qubit_requirements = qubit_requirements
+
+def blocks(input_file, block_size):
+    qubit_requirements = 1
+    while 2**qubit_requirements < block_size:
+        qubit_requirements += 1
+    for index, data in enumerate(input_file.blocks(blocksize=block_size)):
+        yield Block(index, data, qubit_requirements)
 
 def environment_number(variable_name):
     try:
@@ -10,12 +22,6 @@ def environment_number(variable_name):
         return value and int(value)
     except ValueError:
         return None
-
-def to_iterator(values):
-    try:
-        return iter(values)
-    except TypeError:
-        return iter([values])
 
 def parallelize(input_file_path, output_file_paths, process):
     n_proc = environment_number('SLURM_CPUS_PER_TASK') or 1
@@ -26,9 +32,9 @@ def parallelize(input_file_path, output_file_paths, process):
         with ExitStack() as stack:
             output_files = [
                 stack.enter_context(SoundFile(output_file_path, "w", sample_rate, channels=1))
-                for output_file_path in to_iterator(output_file_paths)
+                for output_file_path in output_file_paths
             ]
             with ProcessPoolExecutor(max_workers=n_proc) as executor:
-                for outcomes in executor.map(process,input_file.blocks(blocksize=block_size)):
-                    for outcome, output_file in zip(to_iterator(outcomes), output_files):
+                for outcomes in executor.map(process, blocks(input_file, block_size)):
+                    for outcome, output_file in zip(outcomes, output_files):
                         output_file.write(outcome)
