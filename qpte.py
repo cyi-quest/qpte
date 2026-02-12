@@ -9,11 +9,11 @@ class Block:
         self.data = data
         self.qubit_requirements = qubit_requirements
 
-def blocks(input_file, block_size):
+def blocks(input_file, block_size, overlap):
     qubit_requirements = 1
     while 2**qubit_requirements < block_size:
         qubit_requirements += 1
-    for index, data in enumerate(input_file.blocks(blocksize=block_size)):
+    for index, data in enumerate(input_file.blocks(blocksize=block_size, overlap=overlap)):
         yield Block(index, data, qubit_requirements)
 
 def environment_number(variable_name):
@@ -23,7 +23,7 @@ def environment_number(variable_name):
     except ValueError:
         return None
 
-def parallelize(input_file_path, output_file_paths, process):
+def parallelize(input_file_path, output_file_paths, process, overlap=0):
     n_proc = environment_number('SLURM_CPUS_PER_TASK') or 1
     block_size = environment_number('QPTE_BLOCK_SIZE') or 64
 
@@ -35,6 +35,6 @@ def parallelize(input_file_path, output_file_paths, process):
                 for output_file_path in output_file_paths
             ]
             with ProcessPoolExecutor(max_workers=n_proc) as executor:
-                for outcomes in executor.map(process, blocks(input_file, block_size)):
+                for outcomes in executor.map(process, blocks(input_file, block_size, overlap)):
                     for outcome, output_file in zip(outcomes, output_files):
                         output_file.write(outcome)
