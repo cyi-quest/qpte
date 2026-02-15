@@ -1,4 +1,4 @@
-from qpte import parallelize
+from qpte import parallelize, N_PROC, BLOCK_SIZE
 from time import perf_counter
 
 import numpy as np
@@ -63,17 +63,17 @@ def derivative(block, k = DEFAULT_DERIVATIVE):
     state_vector = np.array(
         simulate_discrete_derivative()
     ).reshape((2 ** len(qs), 2 ** len(ts))).T
-    return state_vector * normalization_factor
+    return np.real(state_vector * normalization_factor)
 
 
 
 if __name__ == "__main__":
-    number_of_runs = 1
+    number_of_runs = 100
     for _ in range(number_of_runs):
         start = perf_counter()
         parallelize(
-            "../audio/input/bell.wav",
-            [f"../audio/output/bell_d{DEFAULT_DERIVATIVE}_{t}.wav" for t in range(2**DEFAULT_DERIVATIVE)],
+            "audio/input/bell.wav",
+            [f"audio/output/bell_d{DEFAULT_DERIVATIVE}_{t}_{N_PROC:>02}_{BLOCK_SIZE:>04}.wav" for t in range(2**DEFAULT_DERIVATIVE)],
             derivative
         )
         print(perf_counter() - start)
